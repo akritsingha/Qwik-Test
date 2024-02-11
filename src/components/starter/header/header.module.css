@@ -13,7 +13,11 @@
 .logo a {
   display: block;
 }
-
+.header{
+  position: sticky;
+  top: 0;
+  margin-top: 100px;
+}
 .header ul {
   margin: 0;
   padding: 0;
