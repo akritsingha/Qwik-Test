@@ -86,7 +86,9 @@ ul {
 /* CONTAINER ------------------------------------ */
 .container {
   margin: 0 auto;
-  padding: 30px 40px;
+  /* padding: 30px 40px; */
+  max-width: 1000px;
+  width: 100%;
 }
 .container.container-purple {
   background: var(--qwik-light-purple);
@@ -106,9 +108,6 @@ ul {
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    padding: 60px 80px;
-  }
   .container.container-spacing-xl {
     padding: 100px 60px;
   }
@@ -125,7 +124,7 @@ button {
   background: var(--qwik-light-blue);
   border: none;
   border-radius: 8px;
-  color: white;
+  color: rgb(71, 62, 62);
   cursor: pointer;
   font-size: 0.8rem;
   padding: 15px 20px;

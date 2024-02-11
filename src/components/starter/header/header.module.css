@@ -1,7 +1,10 @@
 .wrapper {
   display: flex;
   align-items: center;
+  padding: 10px 20px 10px;
   justify-content: space-between;
+  border-radius: 10px;
+  background: black;
 }
 
 .logo {
@@ -22,19 +25,28 @@
 .header li {
   display: none;
   margin: 0;
-  padding: 0;
-  font-size: 0.7rem;
+  
+  /* background-image: linear-gradient(45deg, red, blue); */
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
 }
 
 .header li a {
-  color: white;
+  color: rgb(137, 137, 137);
   display: inline-block;
   padding: 0;
+  transition: 0.5s;
   text-decoration: none;
+  text-transform: uppercase;
+  
 }
 
 .header li a:hover {
-  color: var(--qwik-light-blue);
+  color: rgb(255, 255, 255);
+  padding: 0px 10px;
+  scale: 1.2;
 }
 
 @media (min-width: 450px) {
