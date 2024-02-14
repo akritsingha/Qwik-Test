@@ -1,5 +1,5 @@
 {
-  "manifestHash": "i27a0q",
+  "manifestHash": "6rcq2i",
   "symbols": {
     "s_02wMImzEAbk": {
       "origin": "../node_modules/@builder.io/qwik-city/index.qwik.mjs",
@@ -109,8 +109,8 @@
       "captures": false,
       "parent": null,
       "loc": [
-        3710,
-        5090
+        3715,
+        5095
       ]
     },
     "s_Nk9PlpjQm9Y": {
@@ -977,8 +977,8 @@
       "captures": true,
       "parent": "s_FemKUp8QIKI",
       "loc": [
-        4765,
-        4800
+        4770,
+        4805
       ]
     },
     "s_mW8s0O6wgsc": {
@@ -1005,8 +1005,8 @@
       "captures": true,
       "parent": "s_FemKUp8QIKI",
       "loc": [
-        4518,
-        4554
+        4523,
+        4559
       ]
     },
     "s_p9MSze0ojs4": {
