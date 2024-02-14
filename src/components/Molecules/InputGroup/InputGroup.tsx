@@ -1,7 +1,7 @@
 import { component$} from "@builder.io/qwik";
 import s from './InputGroup.module.scss';
 import classNames from 'classnames';
-import {Input, type InputProps} from '../../Atoms/Input/Input'
+import {Input, type InputProps} from '../../Atoms/Input'
  
 
 // export 
