@@ -1,0 +1,1 @@
+const o={a11y:{config:{},options:{checks:{"color-contrast":{options:{noScroll:!0}}},restoreScroll:!0}},options:{showRoots:!0},docs:{iframeHeight:"200px"}};window.__STORYBOOK_COMPONENT_DOC__??(window.__STORYBOOK_COMPONENT_DOC__=new Map);export{o as parameters};

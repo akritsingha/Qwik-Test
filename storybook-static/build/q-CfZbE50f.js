@@ -1,0 +1,1 @@
+import{l as t}from"./q-Y6E2TeAI.js";import"./q-izE8gtqG.js";const n=r=>{const[e,s]=t();return r&&(Array.isArray(r)?[...r].some(o=>!s.includes(o.type)):!s.includes(r.type))?e:""};export{n as s_G7xnuJT7jNA};

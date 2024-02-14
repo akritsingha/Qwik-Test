@@ -1,0 +1,1 @@
+import{h}from"./q-Y6E2TeAI.js";import"./q-izE8gtqG.js";const f=(t,n)=>{const o=n?/^[6789]\d{9}$/:/^(\+91)?[0]?[6789]\d{9}$/,r=["6666666666","7777777777","8888888888","9999999999"];let e="";return o.test(t)&&(e=t.substring(t.length-10,t.length)),r.indexOf(e)!==-1&&(e=""),e};export{h as _hW,f as s_wxfL4CXuYIk};

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with Vectornator (http://vectornator.io/) -->
+<svg height= "50px" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="249.508 60.9697 787.654 144.415" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<linearGradient gradientTransform="matrix(152.105 0 0 152.105 249.508 132.77)" gradientUnits="userSpaceOnUse" id="LinearGradient" x1="0" x2="1" y1="0" y2="0">
+<stop offset="0" stop-color="#2a70fd"/>
+<stop offset="1" stop-color="#24e1fc"/>
+</linearGradient>
+<linearGradient gradientTransform="matrix(67.5122 0 0 69.0201 317.608 107.718)" gradientUnits="userSpaceOnUse" id="LinearGradient_2" x1="0" x2="1" y1="0" y2="0">
+<stop offset="0" stop-color="#0055ff"/>
+<stop offset="1" stop-color="#45e6ff"/>
+</linearGradient>
+<linearGradient gradientTransform="matrix(524.292 0 0 524.292 0 45.6671)" gradientUnits="userSpaceOnUse" id="LinearGradient_3" x1="0" x2="1" y1="0" y2="0">
+<stop offset="0" stop-color="#00d7ff"/>
+<stop offset="1" stop-color="#0087ff"/>
+</linearGradient>
+</defs>
+<clipPath id="ArtboardFrame">
+<rect height="144.415" width="787.654" x="249.508" y="60.9697"/>
+</clipPath>
+<g clip-path="url(#ArtboardFrame)" id="Layer" vectornator:layerName="Layer">
+<g opacity="1" vectornator:layerName="Group 2">
+<g opacity="1" vectornator:layerName="Group 1">
+<path d="M249.508 82.92C249.508 70.7972 259.335 60.9697 271.458 60.9697L379.662 60.9697C391.785 60.9697 401.612 70.7972 401.612 82.92L401.612 182.62C401.612 194.743 391.785 204.571 379.662 204.571L271.458 204.571C259.335 204.571 249.508 194.743 249.508 182.62L249.508 82.92Z" fill="url(#LinearGradient)" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="Rectangle 1"/>
+<path d="M317.989 113.717C317.989 113.717 319.941 125.486 333.958 143.867C346.652 160.515 335.525 179.854 317.608 183.644C297.74 187.847 264.427 185.867 264.427 185.867" fill="none" opacity="1" stroke="#ffffff" stroke-linecap="butt" stroke-linejoin="round" stroke-width="10" vectornator:layerName="Curve 3"/>
+<path d="M317.608 107.718C317.608 89.2302 332.721 74.2429 351.364 74.2429C370.007 74.2429 385.12 89.2302 385.12 107.718C385.12 126.206 370.007 141.193 351.364 141.193C332.721 141.193 317.608 126.206 317.608 107.718Z" fill="url(#LinearGradient_2)" fill-rule="nonzero" opacity="1" stroke="#ffffff" stroke-linecap="butt" stroke-linejoin="round" stroke-width="10" vectornator:layerName="Oval 1"/>
+</g>
+<text fill="#c8cacb" font-family="ArialHebrew-Bold" font-size="54" opacity="1" stroke="none" text-anchor="start" transform="matrix(1 0 0 1 418.291 152.304)" vectornator:layerName="Text 2" vectornator:width="669.275" x="0" y="0">
+<tspan font-family="Helvetica-Bold" textLength="119.959" x="0" y="52">FILL</tspan>
+<tspan textLength="15.012" x="121.959" y="52"> </tspan>
+<tspan font-family="Helvetica-Bold" textLength="162.015" x="138.971" y="52">YOUR</tspan>
+<tspan textLength="15.012" x="302.986" y="52"> </tspan>
+<tspan font-family="Helvetica-Bold" textLength="163.988" x="319.998" y="52">SKILL</tspan>
+<tspan textLength="15.012" x="485.986" y="52"> </tspan>
+<tspan font-family="Helvetica-Bold" textLength="115.006" x="502.998" y="52">POT</tspan>
+<tspan textLength="0" x="620.004" y="52">
+</tspan>
+</text>
+<text fill="url(#LinearGradient_3)" font-family="DamascusBold" font-size="95" opacity="1" stroke="none" text-anchor="start" transform="matrix(1 0 0 1 418.291 60.9697)" vectornator:layerName="Text 1" vectornator:width="524.292" x="0" y="0">
+<tspan font-family="Helvetica-Bold" textLength="490.712" x="0" y="92">SKILLPOT</tspan>
+<tspan textLength="0" x="493.712" y="92">
+</tspan>
+</text>
+</g>
+</g>
+</svg>
