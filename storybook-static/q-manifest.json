@@ -2258,7 +2258,7 @@
       ],
       "origins": [
         "src/Components/Atoms/Button/storiesData.tsx",
-        "src/components/Atoms/Button/Button.stories.tsx"
+        "src/Components/Atoms/Button/Button.stories.tsx"
       ]
     },
     "q-sldooWI0.js": {
@@ -2464,7 +2464,7 @@
       ],
       "origins": [
         "src/Components/Atoms/Input/storiesData.tsx",
-        "src/components/Atoms/Input/Input.stories.tsx"
+        "src/Components/Atoms/Input/Input.stories.tsx"
       ]
     },
     "q-xlCpjgIf.js": {
