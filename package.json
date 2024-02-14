@@ -43,6 +43,7 @@
     "eslint": "^8.56.0",
     "eslint-plugin-qwik": "^1.4.3",
     "prettier": "^3.2.4",
+    "sass": "^1.70.0",
     "storybook": "^7.4.6",
     "storybook-framework-qwik": "^0.2.4",
     "typescript": "5.3.3",
@@ -52,6 +53,9 @@
     "vite-tsconfig-paths": "^4.2.1"
   },
   "dependencies": {
-    "@modular-forms/qwik": "^0.23.1"
+    "@modular-forms/qwik": "^0.23.1",
+    "classnames": "^2.5.1",
+    "dotenv": "^16.4.4",
+    "pocketbase": "^0.21.1"
   }
 }
