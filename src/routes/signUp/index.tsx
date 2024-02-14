@@ -1,131 +1,131 @@
-import { component$, useSignal } from "@builder.io/qwik";
+import { component$, useSignal, $ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import { Form, routeAction$ } from '@builder.io/qwik-city';
-import { InputGroup } from '~/components/molecules/InputGroup/InputGroup';
+import { InputGroup } from '../../components/molecules/InputGroup/InputGroup';
 // import { Button } from "../../components/atoms/Button/Button";
 import s from './signUp.module.scss'
 // import { error } from "console";
 
-// const signUpData = {
-//   data: {
-//     inputFields: [
-//       {
-//         data: {
-//           label: "Email",
-//           placeholder: "Enter Your Email",
-//           // msg: "We'll never share your email with anyone else.",
-//         },
-//         layout: {
-//           appearance: "col", // row | col
-//           classPrefix: '',
-//           size: "xl",
-//           required: true
-//         },
-//         config: {
-//           inputType: "email",
-//           disabled: false,
-//           attributes: {
-//             name: "email"
-//           }
-//         }
-//       },
-//       {
-//         data: {
-//           label: "Password",
-//           placeholder: "Enter Your Password",
-//           msg: "Password length should be minimum 8 characters",
-//         },
-//         layout: {
-//           appearance: "col", // row | col
-//           classPrefix: '',
-//           size: "xl",
-//           required: true
-//         },
-//         config: {
-//           inputType: "password",
-//           disabled: false,
-//           attributes: {
-//             name: "password"
-//           }
-//         }
-//       },
-//       {
-//         data: {
-//           label: "Confirm Password",
-//           placeholder: "Enter Confirm Password",
-//           // msg: "Password length should be minimum 8 characters",
-//         },
-//         layout: {
-//           appearance: "col", // row | col
-//           classPrefix: '',
-//           size: "xl",
-//           required: true
-//         },
-//         config: {
-//           inputType: "password",
-//           disabled: false,
-//           attributes: {
-//             name: "cfm_password"
-//           }
-//         }
-//       }
-//     ]
-//   },
-//   layout: {
-//     appearance: 'row',
-//     classPrefix: 'signUpForm',
-//   }
-// }
+const signUpData = {
+  data: {
+    inputFields: [
+      {
+        data: {
+          label: "Email",
+          placeholder: "Enter Your Email",
+          // msg: "We'll never share your email with anyone else.",
+        },
+        layout: {
+          appearance: "col", // row | col
+          classPrefix: '',
+          size: "xl",
+          required: true
+        },
+        config: {
+          inputType: "email",
+          disabled: false,
+          attributes: {
+            name: "email"
+          }
+        }
+      },
+      {
+        data: {
+          label: "Password",
+          placeholder: "Enter Your Password",
+          msg: "Password length should be minimum 8 characters",
+        },
+        layout: {
+          appearance: "col", // row | col
+          classPrefix: '',
+          size: "xl",
+          required: true
+        },
+        config: {
+          inputType: "password",
+          disabled: false,
+          attributes: {
+            name: "password"
+          }
+        }
+      },
+      {
+        data: {
+          label: "Confirm Password",
+          placeholder: "Enter Confirm Password",
+          // msg: "Password length should be minimum 8 characters",
+        },
+        layout: {
+          appearance: "col", // row | col
+          classPrefix: '',
+          size: "xl",
+          required: true
+        },
+        config: {
+          inputType: "password",
+          disabled: false,
+          attributes: {
+            name: "cfm_password"
+          }
+        }
+      }
+    ]
+  },
+  layout: {
+    appearance: 'row',
+    classPrefix: 'signUpForm',
+  }
+}
 
-// const logInData = {
-//   data: {
-//     inputFields: [
-//       {
-//         data: {
-//           label: "Email",
-//           placeholder: "Enter Your Email",
-//           // msg: "We'll never share your email with anyone else.",
-//         },
-//         layout: {
-//           appearance: "col", // row | col
-//           classPrefix: '',
-//           size: "xl",
-//           required: true
-//         },
-//         config: {
-//           inputType: "email",
-//           disabled: false,
-//           attributes: {
-//             name: "email"
-//           }
-//         }
-//       },
-//       {
-//         data: {
-//           label: "Password",
-//           placeholder: "Enter Your Password",
-//         },
-//         layout: {
-//           appearance: "col", // row | col
-//           classPrefix: '',
-//           size: "xl",
-//           required: true
-//         },
-//         config: {
-//           inputType: "password",
-//           disabled: false,
-//           attributes: {
-//             name: "password"
-//           }
-//         }
-//       }
-//     ]
-//   },
-//   layout: {
-//     appearance: 'row',
-//     classPrefix: 'signUpForm',
-//   }
-// }
+const logInData = {
+  data: {
+    inputFields: [
+      {
+        data: {
+          label: "Email",
+          placeholder: "Enter Your Email",
+          // msg: "We'll never share your email with anyone else.",
+        },
+        layout: {
+          appearance: "col", // row | col
+          classPrefix: '',
+          size: "xl",
+          required: true
+        },
+        config: {
+          inputType: "email",
+          disabled: false,
+          attributes: {
+            name: "email"
+          }
+        }
+      },
+      {
+        data: {
+          label: "Password",
+          placeholder: "Enter Your Password",
+        },
+        layout: {
+          appearance: "col", // row | col
+          classPrefix: '',
+          size: "xl",
+          required: true
+        },
+        config: {
+          inputType: "password",
+          disabled: false,
+          attributes: {
+            name: "password"
+          }
+        }
+      }
+    ]
+  },
+  layout: {
+    appearance: 'row',
+    classPrefix: 'signUpForm',
+  }
+}
 
 
 export const useSignUpAction = routeAction$((props) => {

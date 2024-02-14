@@ -2,22 +2,22 @@ import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
 import { Form, routeAction$ } from '@builder.io/qwik-city';
-import PocketBase from 'pocketbase';
+// import PocketBase from 'pocketbase';
 
-const pb = new PocketBase(process.env.POCKETBASE_URL);
+// const pb = new PocketBase(process.env.POCKETBASE_URL);
 
-const getRecords = async function() {
-  const records = await pb.collection('Users_Data').getFullList({
-    sort: '-created',
-  }).then((value)=>console.log(value));
-  return records;
-}
+// const getRecords = async function() {
+//   const records = await pb.collection('Users_Data').getFullList({
+//     sort: '-created',
+//   }).then((value)=>console.log(value));
+//   return records;
+// }
 
 export const useSignUpAction = routeAction$((props) => {
   // Leave it as an exercise for the reader to implement this.
-  const records = getRecords();
-  console.log(records);
-  console.log('VOTE', props);
+  // const records = getRecords();
+  // console.log(records);
+  // console.log('VOTE', props);
 });
 
 
