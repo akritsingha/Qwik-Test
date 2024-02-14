@@ -1,1 +1,0 @@
-import{l as n}from"./q-Y6E2TeAI.js";import"./q-izE8gtqG.js";const m=async r=>{const[a]=n(),e=await a.resolve(),s=await(typeof e=="function"?e():e)._parse(r,{abortPipeEarly:!0});return s.issues?s.issues.reduce((o,t)=>({...o,[t.path.map(({key:c})=>c).join(".")]:t.message}),{}):{}};export{m as s_b4MyjhrwMxE};

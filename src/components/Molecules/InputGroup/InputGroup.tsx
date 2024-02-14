@@ -35,7 +35,7 @@ export const InputGroup = component$<InputGroupProps>(({data, layout}) => {
 
   return (
     <div class={InputClassList}>
-      {inputFields && inputFields.map((item, index)=>(
+      {inputFields.map((item, index)=>(
         <div key={`input_${index}`}>
           <Input {...item}/>
         </div>

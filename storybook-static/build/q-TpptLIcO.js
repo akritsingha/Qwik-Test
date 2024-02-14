@@ -1,7 +1,0 @@
-import{_ as u}from"./q-izE8gtqG.js";import{C as l,j as o,y as s,K as e}from"./q-Y6E2TeAI.js";const a=""+new URL("q-LjlvNhYW.webp",import.meta.url).href+" 200w, "+new URL("q-OHynbz7l.webp",import.meta.url).href+" 400w, "+new URL("q-9RlhbzCy.webp",import.meta.url).href+" 600w, "+new URL("q-qFRrPZX5.webp",import.meta.url).href+" 800w, "+new URL("q-w-wWXIil.webp",import.meta.url).href+" 1200w",i=1200,h=1280,m={srcSet:a,width:i,height:h};function p(t,r,w,_){return l("img",{decoding:"async",loading:"lazy",...t},m,void 0,3,r)}const c="_hero_resu5_1",n={hero:c,"hero-image":"_hero-image_resu5_12","button-group":"_button-group_resu5_28"},b=()=>l("div",null,{class:["container",n.hero]},[o(p,{get class(){return n["hero-image"]},alt:"Image thunder",[e]:{alt:e,class:e}},3,"Ym_0"),l("h1",null,null,["So ",l("span",null,{class:"highlight"},"fantastic",3,null),l("br",null,null,null,3,null),"to have ",l("span",null,{class:"highlight"},"you",3,null)," here"],3,null),l("p",null,null,"Have fun building your App with Qwik.",3,null),l("div",null,{class:n["button-group"]},[l("button",null,{onClick$:s(()=>u(()=>import("./q-SO5b65Bu.js"),__vite__mapDeps([]),import.meta.url),"s_YSPql47ANGw")},"Time to celebrate",3,null),l("a",null,{class:"button button-dark",href:"https://qwik.builder.io/docs",target:"_blank"},"Explore the docs",3,null)],3,null)],1,"Ym_1");export{b as s_mwgdwAGXKHA};
-function __vite__mapDeps(indexes) {
-  if (!__vite__mapDeps.viteFileDeps) {
-    __vite__mapDeps.viteFileDeps = []
-  }
-  return indexes.map((i) => __vite__mapDeps.viteFileDeps[i])
-}

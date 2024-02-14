@@ -1,1 +1,0 @@
-import{h as _}from"./q-Y6E2TeAI.js";import"./q-izE8gtqG.js";const a=t=>{const e=/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,6})$/;let r="";return e.test(t)&&(r=t),r};export{_ as _hW,a as s_tYQLzTSHWh4};
