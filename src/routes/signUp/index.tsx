@@ -2,9 +2,9 @@ import { component$, useSignal, $ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import { Form, routeAction$ } from '@builder.io/qwik-city';
 import { InputGroup } from '~/Components/Molecules/InputGroup/InputGroup';
-import { Button } from "~/components/atoms/Button/Button";
+import { Button } from "../../Components/Atoms/Button";
 import s from './signUp.module.scss'
-import { error } from "console";
+// import { error } from "console";
 
 const signUpData = {
   data: {
@@ -134,7 +134,8 @@ export const useSignUpAction = routeAction$((props) => {
   // console.log(records);
   const {password} = props;
   console.log('VOTE', props);
-  if(!(password && password != '' && password.length >= 8)){
+  // && password.length >= 8
+  if(!(password && password != '')){
     console.log('password incorrect')
     // return null;
   }
