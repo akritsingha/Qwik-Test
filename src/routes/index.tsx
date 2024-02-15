@@ -13,7 +13,7 @@ import { Form, routeAction$ } from '@builder.io/qwik-city';
 //   return records;
 // }
 
-export const useSignUpAction = routeAction$((props) => {
+export const useSignUpAction = routeAction$(() => {
   // Leave it as an exercise for the reader to implement this.
   // const records = getRecords();
   // console.log(records);

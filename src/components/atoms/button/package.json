@@ -2,5 +2,5 @@
   "name": "button",
   "version": "1.0.0",
   "private": true,
-  "main": "./Button.tsx"
+  "main": "./button.tsx"
 }

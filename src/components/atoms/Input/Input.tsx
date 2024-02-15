@@ -1,5 +1,5 @@
 import { component$, $ } from "@builder.io/qwik";
-import s from './Input.module.scss';
+import s from './input.module.scss';
 import classNames from 'classnames';
  
 export interface InputProps {

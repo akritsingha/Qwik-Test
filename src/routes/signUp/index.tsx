@@ -1,8 +1,8 @@
 import { component$, useSignal, $ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import { Form, routeAction$ } from '@builder.io/qwik-city';
-import { InputGroup } from '../../components/molecules/InputGroup/InputGroup';
-// import { Button } from "../../components/atoms/Button/Button";
+import { InputGroup } from '../../components/molecules/inputGroup/inputGroup';
+import { Button } from "../../components/atoms/button/button";
 import s from './signUp.module.scss'
 // import { error } from "console";
 
@@ -178,7 +178,7 @@ export default component$(() => {
     <div class={s.signUpFormPage}>
       <div class={s.signUpForm}>
         <div class={s.buttonGroup}>
-          {/* <Button {...{
+          <Button {...{
             layout: { appearance: `${formState.value === 'signUp' ? 'success' : 'dark'}`, size: "md", outline: false },
             config: { onBtnClick: $(() => { formState.value = 'signUp' }) }
           }}>
@@ -187,12 +187,12 @@ export default component$(() => {
           <Button {...{
             layout: { appearance: `${formState.value === 'logIn' ? 'success' : 'dark'}`, size: "md" },
             config: { onBtnClick: $(() => { formState.value = 'logIn' }) }
-          }}>Log In</Button> */}
+          }}>Log In</Button>
         </div>
         <h1 class={s.heading}>{formHeading}</h1>
         <Form action={signUpAction}>
           <InputGroup {...formInputGroupData} />
-          {/* <Button {...signUpBtnProps}>{formHeading}</Button> */}
+          <Button {...signUpBtnProps}>{formHeading}</Button>
         </Form>
       </div>
     </div>
