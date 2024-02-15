@@ -1,8 +1,8 @@
 import { component$, useSignal } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import { Form, routeAction$ } from '@builder.io/qwik-city';
-import { InputGroup } from '../../components/molecules/inputGroup/inputGroup';
-import { Button } from "../../components/atoms/button/button";
+import { InputGroup } from '../../starter/molecules/inputGroup/inputGroup';
+import { Button } from "../../starter/atoms/button/button";
 import s from './signUp.module.css'
 // import { error } from "console";
 
