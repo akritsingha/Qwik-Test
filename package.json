@@ -35,7 +35,6 @@
     "eslint": "^8.56.0",
     "eslint-plugin-qwik": "^1.4.3",
     "prettier": "^3.2.4",
-    "sass": "^1.70.0",
     "typescript": "5.3.3",
     "undici": "*",
     "vercel": "^29.1.1",

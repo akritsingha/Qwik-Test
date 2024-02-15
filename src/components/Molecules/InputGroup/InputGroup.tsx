@@ -1,5 +1,5 @@
 import { component$} from "@builder.io/qwik";
-import s from './inputGroup.module.scss';
+import s from './inputGroup.module.css';
 import classNames from 'classnames';
 import {Input, type InputProps} from '../../atoms/input/input'
  

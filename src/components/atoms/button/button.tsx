@@ -1,5 +1,5 @@
 import { component$, $, Slot } from "@builder.io/qwik";
-import s from './button.module.scss';
+import s from './button.module.css';
 import classNames from 'classnames';
  
 export interface ButtonProps {

@@ -1,0 +1,32 @@
+.signUpFormPage {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signUpFormPage .signUpForm {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  height: auto;
+  box-shadow: 1px 1px 10px rgba(86, 86, 86, 0.3137254902);
+}
+.signUpFormPage .signUpForm .buttonGroup {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.signUpFormPage .signUpForm .buttonGroup button {
+  width: 100%;
+  border-radius: 0;
+}
+.signUpFormPage .signUpForm .heading {
+  color: rgb(84, 84, 84);
+  font-size: 30px;
+  margin-top: 20px;
+}
+.signUpFormPage .signUpForm .signUpButton {
+  margin-top: 20px;
+  margin-left: 8px;
+}/*# sourceMappingURL=signUp.module.css.map */

@@ -1,0 +1,78 @@
+.button {
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.button.bg_success {
+  background-color: #27995b;
+}
+.button.bg_success.outline {
+  border-color: #27995b !important;
+  color: #27995b;
+}
+.button.bg_success:focus {
+  box-shadow: 0 0 0 0.25rem rgba(39, 153, 91, 0.3137254902);
+}
+.button.bg_success:hover {
+  background-color: #1e7947;
+}
+.button.bg_danger {
+  background-color: #dc3545;
+}
+.button.bg_danger.outline {
+  border-color: #dc3545 !important;
+  color: #dc3545;
+}
+.button.bg_danger:focus {
+  box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.3137254902);
+}
+.button.bg_danger:hover {
+  background-color: #c12535;
+}
+.button.bg_primary {
+  background-color: #0d6efd;
+}
+.button.bg_primary.outline {
+  border-color: #0d6efd !important;
+  color: #0d6efd;
+}
+.button.bg_primary:focus {
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.3137254902);
+}
+.button.bg_primary:hover {
+  background-color: #0d4efd;
+}
+.button.bg_dark {
+  background-color: #212529;
+}
+.button.bg_dark.outline {
+  border-color: #212529 !important;
+}
+.button.bg_dark:focus {
+  box-shadow: 0 0 0 0.25rem rgba(33, 37, 41, 0.3137254902);
+}
+.button.bg_dark:hover {
+  background-color: #211029;
+}
+.button.outline {
+  border: 2px solid;
+  background-color: transparent;
+  color: #000000;
+}
+.button.size_md {
+  font-size: 16px;
+  padding: 10px 20px;
+}
+.button.size_small {
+  font-size: 14px;
+  padding: 5px 10px;
+}
+.button.size_xl {
+  font-size: 20px;
+  padding: 15px 25px;
+}
+.button:hover {
+  background-color: #525252;
+  color: #ffffff !important;
+}/*# sourceMappingURL=button.module.css.map */

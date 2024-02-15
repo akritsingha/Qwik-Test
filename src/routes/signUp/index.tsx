@@ -3,7 +3,7 @@ import type { DocumentHead } from "@builder.io/qwik-city";
 import { Form, routeAction$ } from '@builder.io/qwik-city';
 import { InputGroup } from '../../components/molecules/inputGroup/inputGroup';
 import { Button } from "../../components/atoms/button/button";
-import s from './signUp.module.scss'
+import s from './signUp.module.css'
 // import { error } from "console";
 
 const signUpData = {
