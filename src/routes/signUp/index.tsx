@@ -1,4 +1,4 @@
-import { component$, useSignal } from "@builder.io/qwik";
+import { component$, useSignal, $ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import { Form, routeAction$ } from '@builder.io/qwik-city';
 import { InputGroup } from '../../starter/molecules/inputGroup/inputGroup';
@@ -77,55 +77,55 @@ const signUpData = {
   }
 }
 
-// const logInData = {
-//   data: {
-//     inputFields: [
-//       {
-//         data: {
-//           label: "Email",
-//           placeholder: "Enter Your Email",
-//           // msg: "We'll never share your email with anyone else.",
-//         },
-//         layout: {
-//           appearance: "col", // row | col
-//           classPrefix: '',
-//           size: "xl",
-//           required: true
-//         },
-//         config: {
-//           inputType: "email",
-//           disabled: false,
-//           attributes: {
-//             name: "email"
-//           }
-//         }
-//       },
-//       {
-//         data: {
-//           label: "Password",
-//           placeholder: "Enter Your Password",
-//         },
-//         layout: {
-//           appearance: "col", // row | col
-//           classPrefix: '',
-//           size: "xl",
-//           required: true
-//         },
-//         config: {
-//           inputType: "password",
-//           disabled: false,
-//           attributes: {
-//             name: "password"
-//           }
-//         }
-//       }
-//     ]
-//   },
-//   layout: {
-//     appearance: 'row',
-//     classPrefix: 'signUpForm',
-//   }
-// }
+const logInData = {
+  data: {
+    inputFields: [
+      {
+        data: {
+          label: "Email",
+          placeholder: "Enter Your Email",
+          // msg: "We'll never share your email with anyone else.",
+        },
+        layout: {
+          appearance: "col", // row | col
+          classPrefix: '',
+          size: "xl",
+          required: true
+        },
+        config: {
+          inputType: "email",
+          disabled: false,
+          attributes: {
+            name: "email"
+          }
+        }
+      },
+      {
+        data: {
+          label: "Password",
+          placeholder: "Enter Your Password",
+        },
+        layout: {
+          appearance: "col", // row | col
+          classPrefix: '',
+          size: "xl",
+          required: true
+        },
+        config: {
+          inputType: "password",
+          disabled: false,
+          attributes: {
+            name: "password"
+          }
+        }
+      }
+    ]
+  },
+  layout: {
+    appearance: 'row',
+    classPrefix: 'signUpForm',
+  }
+}
 
 
 export const useSignUpAction = routeAction$((props) => {
@@ -171,37 +171,13 @@ export default component$(() => {
     }
   }
 
-  // const formInputGroupData = formState.value === 'signUp' ?  signUpData : logInData;
-  // const formHeading = formState.value === 'signUp' ?  "Sign Up" : "Log In";
+  const formInputGroupData = formState.value === 'signUp' ?  signUpData : logInData;
+  const formHeading = formState.value === 'signUp' ?  "Sign Up" : "Log In";
   const signUpAction = useSignUpAction();
-  // return (
-  //   <div class={s.signUpFormPage}>
-  //     <div class={s.signUpForm}>
-  //       <div class={s.buttonGroup}>
-  //         <Button {...{
-  //           layout: { appearance: `${formState.value === 'signUp' ? 'success' : 'dark'}`, size: "md", outline: false },
-  //           config: { onBtnClick: $(() => { formState.value = 'signUp' }) }
-  //         }}>
-  //           Sign Up</Button>
-
-  //         <Button {...{
-  //           layout: { appearance: `${formState.value === 'logIn' ? 'success' : 'dark'}`, size: "md" },
-  //           config: { onBtnClick: $(() => { formState.value = 'logIn' }) }
-  //         }}>Log In</Button>
-  //       </div>
-  //       <h1 class={s.heading}>{formHeading}</h1>
-  //       <Form action={signUpAction}>
-  //         <InputGroup {...formInputGroupData} />
-  //         <Button {...signUpBtnProps}>{formHeading}</Button>
-  //       </Form>
-  //     </div>
-  //   </div>
-  // );
-
   return (
     <div class={s.signUpFormPage}>
       <div class={s.signUpForm}>
-        {/* <div class={s.buttonGroup}>
+        <div class={s.buttonGroup}>
           <Button {...{
             layout: { appearance: `${formState.value === 'signUp' ? 'success' : 'dark'}`, size: "md", outline: false },
             config: { onBtnClick: $(() => { formState.value = 'signUp' }) }
@@ -212,15 +188,39 @@ export default component$(() => {
             layout: { appearance: `${formState.value === 'logIn' ? 'success' : 'dark'}`, size: "md" },
             config: { onBtnClick: $(() => { formState.value = 'logIn' }) }
           }}>Log In</Button>
-        </div> */}
-        <h1 class={s.heading}>Sign Up</h1>
+        </div>
+        <h1 class={s.heading}>{formHeading}</h1>
         <Form action={signUpAction}>
-          <InputGroup {...signUpData} />
-          <Button {...signUpBtnProps}>Sign Up</Button>
+          <InputGroup {...formInputGroupData} />
+          <Button {...signUpBtnProps}>{formHeading}</Button>
         </Form>
       </div>
     </div>
   );
+
+  // return (
+  //   <div class={s.signUpFormPage}>
+  //     <div class={s.signUpForm}>
+  //       {/* <div class={s.buttonGroup}>
+  //         <Button {...{
+  //           layout: { appearance: `${formState.value === 'signUp' ? 'success' : 'dark'}`, size: "md", outline: false },
+  //           config: { onBtnClick: $(() => { formState.value = 'signUp' }) }
+  //         }}>
+  //           Sign Up</Button>
+
+  //         <Button {...{
+  //           layout: { appearance: `${formState.value === 'logIn' ? 'success' : 'dark'}`, size: "md" },
+  //           config: { onBtnClick: $(() => { formState.value = 'logIn' }) }
+  //         }}>Log In</Button>
+  //       </div> */}
+  //       <h1 class={s.heading}>Sign Up</h1>
+  //       <Form action={signUpAction}>
+  //         <InputGroup {...signUpData} />
+  //         <Button {...signUpBtnProps}>Sign Up</Button>
+  //       </Form>
+  //     </div>
+  //   </div>
+  // );
 });
 
 
