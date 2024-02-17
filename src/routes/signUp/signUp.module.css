@@ -3,30 +3,48 @@
   height: 100vh;
   display: flex;
   justify-content: center;
+  flex-flow: column;
   align-items: center;
+  background: #f5f5f5;
 }
 .signUpFormPage .signUpForm {
   max-width: 400px;
   width: 100%;
   padding: 20px;
   height: auto;
-  box-shadow: 1px 1px 10px rgba(86, 86, 86, 0.3137254902);
+  border-radius: 10px;
+  background: white;
+  box-shadow: 1px 1px 20px rgba(205, 205, 205, 0.5);
+  position: relative;
 }
 .signUpFormPage .signUpForm .buttonGroup {
-  width: 100%;
+  width: auto;
   display: flex;
   justify-content: center;
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 .signUpFormPage .signUpForm .buttonGroup button {
   width: 100%;
   border-radius: 0;
+  text-wrap: nowrap;
 }
 .signUpFormPage .signUpForm .heading {
   color: rgb(84, 84, 84);
   font-size: 30px;
   margin-top: 20px;
 }
-.signUpFormPage .signUpForm .signUpButton {
-  margin-top: 20px;
-  margin-left: 8px;
+.signUpFormPage .signUpForm .bottomButtonGroup {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8px 10px;
+}
+.signUpFormPage .signUpForm .bottomButtonGroup .forgotPassBtn {
+  position: relative;
+  right: 0;
 }/*# sourceMappingURL=signUp.module.css.map */

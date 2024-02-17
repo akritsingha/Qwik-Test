@@ -9,6 +9,7 @@ import {Input, type InputProps} from '../../atoms/input/input'
 
 export interface InputGroupProps {
   data: {
+    forgotText?: string;
     inputFields: Array<InputProps>;
   },
   layout: {

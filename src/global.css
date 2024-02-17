@@ -16,7 +16,9 @@
   --qwik-dark-text: #272727;
   --qwik-light-orange: #ff6816;
 }
-
+*{
+  box-sizing: border-box;
+}
 html {
   line-height: 1;
   -webkit-text-size-adjust: 100%;

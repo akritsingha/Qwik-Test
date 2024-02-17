@@ -1,5 +1,5 @@
 // import type { Meta, StoryObj } from "storybook-framework-qwik";
-// import {Button, type ButtonProps} from "./Button";
+// import {Button, type ButtonProps} from "./button";
 // import {varient1, varient2, varient3, varient4, varient5 } from "./storiesData"
  
 // const meta: Meta<ButtonProps>  = {

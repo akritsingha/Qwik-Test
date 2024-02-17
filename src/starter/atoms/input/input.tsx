@@ -7,6 +7,7 @@ export interface InputProps {
     label?: string,
     placeholder?: string,
     msg?: string,
+    options?: any
   },
   layout: {
     appearance?: string,
@@ -28,6 +29,7 @@ export const Input = component$<InputProps>(({data, layout, config}) => {
     label='', 
     placeholder= '', 
     msg= '',
+    options = {}
   } = data;
   const {
     appearance='',
@@ -44,6 +46,7 @@ export const Input = component$<InputProps>(({data, layout, config}) => {
 
   const InputClassList = classNames(s.input, classPrefix, {
     [s.checkbox]: inputType === 'checkbox',
+    [s.option]: inputType === 'option',
     [s.row]: appearance === 'row',
     [s.col]: appearance === 'col',
     [s.size_md]: size === 'md',
@@ -60,6 +63,29 @@ export const Input = component$<InputProps>(({data, layout, config}) => {
     }
   });
 
+  let inputComp:any;
+
+
+  switch(inputType){
+    case 'option':
+      inputComp = (
+      <select  {...attributes} >
+        {
+          Object.keys(options).map((item, index)=>(
+            <option value={item} key={`option_${index}`}>{options[item] || ""}</option>
+          )) 
+        }
+      </select>)
+      break;
+    case 'textarea':
+      inputComp = <textarea {...attributes} placeholder={placeholder}></textarea>
+      break;
+    default:
+      inputComp = <input type={inputType} placeholder={placeholder} onInput$={handleEvent} {...attributes} />
+      break;
+  }
+  
+
   return (
     <div class={InputClassList}>
       {
@@ -67,7 +93,8 @@ export const Input = component$<InputProps>(({data, layout, config}) => {
         <label>{label}</label>
       }
       <div class={s.inputWrapper}>
-        <input type={inputType} placeholder={placeholder} onInput$={handleEvent} {...attributes} />
+        {/* <input type={inputType} placeholder={placeholder} onInput$={handleEvent} {...attributes} /> */}
+        {inputComp}
         {
           msg &&
           <p class={s.inputMsg}>{msg}</p>
